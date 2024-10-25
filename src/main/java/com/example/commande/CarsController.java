@@ -66,4 +66,6 @@ public class CarsController {
         }
         throw new Exception("Car not found with plate number: " + plateNumber);
     }
+
+    //Test NOUVELLE METHODE
 }
