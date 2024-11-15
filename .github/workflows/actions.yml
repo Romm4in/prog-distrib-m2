@@ -27,7 +27,7 @@ jobs:
 
       - name: Tag Docker image
         run: |
-          docker tag my-app-image r0maiin/commandeTest:v1.0
+          docker tag my-app-image r0maiin/commande-test:v1.0
 
       - name: Login to Docker Hub
         env:
