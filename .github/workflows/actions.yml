@@ -36,4 +36,4 @@ jobs:
         run: echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
 
       - name: Push Docker image
-        run: docker push r0maiin/commandeTest:v1.0
+        run: docker push r0maiin/commande-test:v1.0
