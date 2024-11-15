@@ -21,13 +21,13 @@ jobs:
         run: |
           export SHELL=/bin/bash
           ./gradlew build
+
       - name: Build Docker image
-        run: |
-          docker build -t my-docker-image .
+        run: docker build -t my-app-image:latest .
 
       - name: Tag Docker image
         run: |
-          docker tag my-app-image r0maiin/commande-test:v1.0
+          docker tag my-app-image:latest r0maiin/commande-test:v1.0
 
       - name: Login to Docker Hub
         env:
